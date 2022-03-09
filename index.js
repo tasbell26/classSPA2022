@@ -5,6 +5,7 @@ import { Header, Footer, Main, Nav } from "./components";
 import * as state from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
+import axios from "axios";
 
 // for api key
 import dotenv from "dotenv";
@@ -65,6 +66,17 @@ router.hooks({
           done();
         })
         .catch((err) => console.log(err));
+    }
+    if (page === "Pizza") {
+      axios
+        .get(`${process.env.PIZZA_PLACE_API_URL}`)
+        .then((response) => {
+          state.Pizza.pizzas = response.data;
+          done();
+        })
+        .catch((error) => {
+          console.log("It puked", error);
+        });
     }
   },
 });
