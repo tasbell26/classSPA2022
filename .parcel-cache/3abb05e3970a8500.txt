@@ -39,7 +39,7 @@
 84C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\postcss-minify-font-values132905720691053512 1
 86C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\type-fest\source\except.d.ts132905700939494485 0
 105C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\@parcel\transformer-json\lib\JSONTransformer.js132905720701157278 0
-49C:\Users\tasbe\code\savvycoders\classSPA2022\dist132912707449958013 1
+49C:\Users\tasbe\code\savvycoders\classSPA2022\dist132913454438279199 1
 117C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\.npmignore132905720692529727 0
 76C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\lodash\function.js132907477319565623 0
 68C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\is-extglob132905700938401997 1
@@ -117,7 +117,7 @@
 85C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\@humanwhocodes\config-array132905700938962427 1
 86C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\natural-compare\package.json132905700937872203 0
 77C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\lodash.uniq\LICENSE132905720686295094 0
-53C:\Users\tasbe\code\savvycoders\classSPA2022\index.js132912707442836413 0
+53C:\Users\tasbe\code\savvycoders\classSPA2022\index.js132913456042696736 0
 74C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\semver\range.bnf132905720692742977 0
 67C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\nth-check132905720686126208 1
 101C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\eslint\lib\source-code\token-store\index.js132905700941461561 0
@@ -4550,7 +4550,7 @@
 107C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\module.c132905720696715991 0
 107C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\module.h132905720699342054 0
 106C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest.c132905720697111506 0
-67C:\Users\tasbe\code\savvycoders\classSPA2022\dist\index.3d214d75.js132912707449485151 0
+67C:\Users\tasbe\code\savvycoders\classSPA2022\dist\index.3d214d75.js132913454438238294 0
 113C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\sample-bdb.txt132905720722844593 0
 106C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\tooltag132905720694191911 0
 88C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\@parcel\optimizer-htmlnano\src132905720705157289 1
@@ -7139,7 +7139,7 @@
 73C:\Users\tasbe\code\savvycoders\classSPA2022\node_modules\.bin\terser.ps1132905720791118069 0
 58C:\Users\tasbe\code\savvycoders\classSPA2022\dist\bio.html132906543885570985 0
 68C:\Users\tasbe\code\savvycoders\classSPA2022\dist\index.3a01df49.css132912707449294210 0
-71C:\Users\tasbe\code\savvycoders\classSPA2022\dist\index.3d214d75.js.map132912707449531723 0
+71C:\Users\tasbe\code\savvycoders\classSPA2022\dist\index.3d214d75.js.map132913454438268298 0
 67C:\Users\tasbe\code\savvycoders\classSPA2022\dist\order.c36f364e.js132906543885570985 0
 71C:\Users\tasbe\code\savvycoders\classSPA2022\dist\order.c36f364e.js.map132906543885639259 0
 67C:\Users\tasbe\code\savvycoders\classSPA2022\dist\pizza.deb3b204.js132906542644361920 0

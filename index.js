@@ -48,8 +48,8 @@ function addEventListener(st) {
 router.hooks({
   before: (done, params) => {
     const page =
-      params && params.hasOwnProperty("page")
-        ? capitalize(params.page)
+      params && params.data && params.data.page
+        ? capitalize(params.data.page)
         : "Home";
 
     if (page === "Home") {
@@ -66,17 +66,19 @@ router.hooks({
           done();
         })
         .catch((err) => console.log(err));
-    }
-    if (page === "Pizza") {
+    } else if (page === "Pizza") {
       axios
         .get(`${process.env.PIZZA_PLACE_API_URL}`)
         .then((response) => {
+          console.log(response.data);
           state.Pizza.pizzas = response.data;
           done();
         })
         .catch((error) => {
           console.log("It puked", error);
         });
+    } else {
+      done();
     }
   },
 });
@@ -85,7 +87,7 @@ router
   .on({
     "/": () => render(state.Home),
     ":page": (params) => {
-      let page = capitalize(params.page);
+      let page = capitalize(params.data.page);
       render(state[page]);
     },
   })
