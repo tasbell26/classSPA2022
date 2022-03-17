@@ -1,8 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
 // Require dotenv to load environment variables
+
 const dotenv = require("dotenv");
+// Require models
+const pizzas = require("./routers/pizzas");
 dotenv.config();
+
 const app = express();
 const PORT = process.env.PORT || 4040; // we use || to provide a default value
 
@@ -19,11 +23,12 @@ const logging = (request, response, next) => {
   console.log(`${request.method} ${request.url} ${Date.now()}`);
   next();
 };
-
+// middleware goes here
 app.use(express.json());
 app.use(logging);
-
-// middleware goes here
+// middleware goes above routers
+// use routers
+app.use("/pizzas", pizzas);
 // Handle the request with HTTP GET method from http://localhost:4040/status
 app.get("/status", (request, response) => {
   // Create the headers for response by default 200
