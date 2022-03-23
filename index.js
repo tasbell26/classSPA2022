@@ -23,25 +23,31 @@ function render(st) {
 
   router.updatePageLinks();
 
-  addEventListener();
+  addEventListener(st);
 }
 
 // render(state.Home);
 
 // eventlistener for nav bar
 function addEventListener(st) {
-  document.querySelectorAll("nav a").forEach((navLink) =>
-    navLink.addEventListener("click", (event) => {
-      event.preventDefault();
-      render(state[event.target.title]);
-    })
-  );
   // toggle for hamburger
   document
     .querySelector(".fa-bars")
     .addEventListener("click", () =>
       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
+  console.log(st);
+  // using state to make sure code only runs on that specific page
+  if (st.view === "Orders") {
+    console.log("matsinet-st.view:", st.view);
+    // allows you to grab the event and data associated to the event
+    document.querySelector("form").addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+    });
+  }
 }
 
 // router hooks function to help with organization and reduce race errors
