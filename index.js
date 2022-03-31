@@ -47,7 +47,7 @@ function addEventListener(st) {
       console.log("Input Element List", inputList);
 
       const toppings = [];
-      // Interate over the toppings input group elements
+      // Iterate over the toppings input group elements
       for (let input of inputList.toppings) {
         // If the value of the checked attribute is true then add the value to the toppings array
         if (input.checked) {

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "test": "npx jasmine-node spec",
     "start": "node ./server/index.js",
     "parcel-build": "parcel build index.html && cp _redirects ./dist/",
     "serve": "parcel index.html",
@@ -15,6 +16,7 @@
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.3.1",
+    "jasmine-node": "^3.0.0",
     "nodemon": "^2.0.15",
     "os-browserify": "^0.3.0",
     "parcel": "^2.0.1",

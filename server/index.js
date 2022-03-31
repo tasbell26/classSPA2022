@@ -38,6 +38,7 @@ const logging = (request, response, next) => {
   console.log(`${request.method} ${request.url} ${Date.now()}`);
   next();
 };
+
 // middleware goes here
 // cors needs to go first
 app.use(cors);
@@ -47,11 +48,13 @@ app.use(logging);
 // use routers
 app.use("/pizzas", pizzas);
 // Handle the request with HTTP GET method from http://localhost:4040/status
+
 app.get("/status", (request, response) => {
   // Create the headers for response by default 200
   // End and return the response
   response.send(JSON.stringify({ message: "Service healthy" }));
 });
+
 // .get takes the place of route
 // the parameter after get defines the route
 // is looking for the parameters in the url to initiate the route
@@ -60,9 +63,11 @@ app.get("/", (request, response) => {
     .status(418)
     .json({ message: "No Resource Found Here, Please see instructions" });
 });
+
 app.post("/", (request, response) => {
   response.json(request.body);
 });
+
 // adding a new attribute to the Object
 app.post("/", (request, response) => {
   console.log("matsinet-request:", request);
@@ -70,6 +75,7 @@ app.post("/", (request, response) => {
   body.date = Date.now();
   response.json(body);
 });
+
 // all routes go above the listen
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040
